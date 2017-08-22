@@ -1,8 +1,0 @@
-#!/bin/bash
-# Convert a Windows path to a Unix Path. Useful on Cygwin.
-
-if [ $OSTYPE == 'cygwin' ]; then
-  cygpath -w $1 
-else
-  echo $1
-fi
